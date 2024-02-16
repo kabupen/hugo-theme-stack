@@ -53,9 +53,10 @@
     gap: 15px;
 }
 
+/* タイトルの文字　*/
 .article-title {
     font-family: var(--article-font-family);
-    font-weight: 600;
+    font-weight: 600; // 文字の太さ具合
     margin: 0;
     color: var(--card-text-color-main);
     font-size: 2.2rem;
@@ -73,6 +74,7 @@
     }
 }
 
+/* サブタイトルの文字　*/
 .article-subtitle {
     font-weight: normal;
     color: var(--card-text-color-secondary);
@@ -127,18 +129,20 @@
     }
 }
 
+/* 記事ページに表示されるタグ、カテゴリーの設定
+*/
 .article-category,
 .article-tags {
     display: flex;
     gap: 10px;
 
     a {
-        color: var(--accent-color-text);
-        background-color: var(--accent-color);
-        padding: 8px 16px;
+        color:  #808080; //var(--accent-color-text);
+        background-color: #dfeaff; // var(--accent-color);
+        padding: 2px 16px;
         border-radius: var(--tag-border-radius);
         display: inline-block;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         transition: background-color 0.5s ease;
 
         &:hover {
