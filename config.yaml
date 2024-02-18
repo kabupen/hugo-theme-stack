@@ -41,7 +41,7 @@ params:
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
-        emoji: 🐣
+        emoji: #🐣
         subtitle: エンジニアの卵として、日々勉強したことなどをまとめています。
         avatar:
             enabled: true

@@ -1,5 +1,9 @@
-$defaultTagBackgrounds: #8ea885, #df7988, #0177b8, #ffb900, #6b69d6;
-$defaultTagColors: #fff, #fff, #fff, #fff, #fff;
+/*
+Tag color の設定
+- デフォルトでは複数の色を、ページに表示されている上から for loop で異なる色を設定している
+*/
+$defaultTagBackgrounds: #dfeaff; // #808080; // #8ea885, #df7988, #0177b8, #ffb900, #6b69d6;
+$defaultTagColors: #808080; // #fff, #fff, #fff, #fff, #fff;
 
 /*
 *   Global style
