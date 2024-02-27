@@ -6,6 +6,7 @@
     </button>
 
     <header>
+        <!-- アバター画像 -->
         {{ with .Site.Params.sidebar.avatar }}
             {{ if (default true .enabled) }}
             <figure class="site-avatar">
@@ -37,6 +38,7 @@
         </div>
     </header>
 
+    <!-- Git, Twitter のアイコンについて -->
     {{- with .Site.Menus.social -}}
         <ol class="social-menu">
             {{ range . }}
