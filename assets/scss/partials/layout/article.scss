@@ -28,6 +28,12 @@
                 padding: var(--card-padding);
                 padding-bottom: 0;
             }
+
+            .article-meta {
+                padding: var(--card-padding);
+                padding-top: 10px; // var(--card-padding);
+                padding-bottom: 10px;
+            }
         }
 
         .article-content {

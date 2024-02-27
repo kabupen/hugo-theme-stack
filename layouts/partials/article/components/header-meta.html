@@ -1,0 +1,35 @@
+<div class="article-header">
+    <!--
+        メタ情報
+        * カテゴリー
+        * タグ
+    -->
+    <div class="article-meta">
+        <!-- category -->
+        {{ if .Params.categories }}
+        <header class="article-category">
+            <!-- category アイコン -->
+            <div>
+                {{ partial "helper/icon" "tag" }}
+            </div>
+            {{ range (.GetTerms "categories") }}
+                <a href="{{ .RelPermalink }}" {{ with .Params.style }}style="background-color: {{ .background }}; color: {{ .color }};"{{ end }}>
+                    {{ .LinkTitle }}
+                </a>
+            {{ end }}
+        </header>
+        {{ end }}
+    
+        <!-- tags -->
+        {{ if .Params.Tags }}
+        <section class="article-tags">
+            <div>
+                {{ partial "helper/icon" "tag" }}
+            </div>
+            {{ range (.GetTerms "tags") }}
+                <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            {{ end }}
+        </section>
+        {{ end }}
+    </div>
+</div>

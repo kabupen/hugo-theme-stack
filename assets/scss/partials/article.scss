@@ -50,7 +50,7 @@
     flex-direction: column;
     justify-content: center;
     padding: var(--card-padding);
-    gap: 15px;
+    gap: 10px;
 }
 
 /* タイトルの文字　*/
@@ -134,12 +134,13 @@
 .article-category,
 .article-tags {
     display: flex;
-    gap: 10px;
+    gap: 5px;
+    align-items: center; // 縦方向中央揃え
 
     a {
         color:  #808080; //var(--accent-color-text);
-        background-color: #dfeaff; // var(--accent-color);
-        padding: 2px 16px;
+        // background-color: #dfeaff; // var(--accent-color);
+        padding: 2px 0px;
         border-radius: var(--tag-border-radius);
         display: inline-block;
         font-size: 1.3rem;
@@ -149,6 +150,13 @@
             color: var(--accent-color-text);
             background-color: var(--accent-color-darker);
         }
+    }
+    
+    svg {
+        width: 20px;
+        height: 20px;
+        stroke-width: 1.5; // 線の細さ
+        color: var(--body-text-color);
     }
 }
 
