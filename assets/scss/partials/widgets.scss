@@ -16,23 +16,36 @@
     - サイドメニューのタグについての表示をコントロールしている
 */
 .tagCloud {
+    
     .tagCloud-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
+        // display: flex;
+        // flex-wrap: wrap;
+        // gap: 10px; // tag の間隔
+        background: var(--card-background); 
+        box-shadow: var(--shadow-l1);
+        border-radius: 10px; /* 角丸の半径を設定 */
+        padding: 16px; /* 内側の余白を設定 */
+        margin: 0px 0; /* 外側の余白を設定 */
 
         a {
-            background: var(--card-background);
-            box-shadow: var(--shadow-l1);
+            display: block;
+            // background: var(--card-background); 
+            // box-shadow: var(--shadow-l1);
             border-radius: var(--tag-border-radius);
-            padding: 8px 20px;
-            color: var(--card-text-color-main);
+            padding: 8px 15px; // 縦方向, インデント
+            // margin-bottom: 10px;
+            color: #0044CC; // rgb(168, 168, 255); // (--card-text-color-main);
             font-size: 1.4rem;
             transition: box-shadow 0.3s ease;
 
-            &:hover {
-                box-shadow: var(--shadow-l2);
+            &:hover { // マウスホバーの挙動
+                // box-shadow: var(--shadow-l2);
+                color: darkblue;
             }
+        }
+
+        .tag-count {
+            color: gray; /* 使用回数の色を黒に設定 */
         }
     }
 }

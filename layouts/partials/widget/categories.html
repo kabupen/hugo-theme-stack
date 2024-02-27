@@ -12,6 +12,7 @@
         {{ range first $limit $context.Site.Taxonomies.categories.ByCount }}
             <a href="{{ .Page.RelPermalink }}" class="font_size_{{ .Count }}">
                 {{ .Page.Title }}
+                <span class="tag-count">({{ .Count }})</span>
             </a>
         {{ end }}
     </div>
