@@ -97,7 +97,7 @@ $defaultTagColors: #808080; // #fff, #fff, #fff, #fff, #fff;
     --article-font-size: 1.6rem;
     
     @include respond(xs) {
-        --article-font-size: 1.6rem; // 本文の文字サイズ
+        --article-font-size: 1.5rem; // 本文の文字サイズ
     }
     
     @include respond(sm) {
