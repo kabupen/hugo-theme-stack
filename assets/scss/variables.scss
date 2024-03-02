@@ -96,16 +96,16 @@ $defaultTagColors: #808080; // #fff, #fff, #fff, #fff, #fff;
     --article-font-family: var(--base-font-family);
     --article-font-size: 1.6rem;
     
-    @include respond(xs) {
+    @include respond(xs) { // モバイル版
         --article-font-size: 1.5rem; // 本文の文字サイズ
     }
     
-    @include respond(sm) {
+    @include respond(sm) { // HD monitor
         --article-font-size: 1.3rem; // 本文の文字サイズ
     }
 
-    @include respond(md) {
-        --article-font-size: 1.3rem; // 本文の文字サイズ
+    @include respond(md) { // macbook
+        --article-font-size: 1.5rem; // 本文の文字サイズ
     }
 
     --article-line-height: 2; // 行間
