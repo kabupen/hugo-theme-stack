@@ -146,6 +146,14 @@ $defaultTagColors: #808080; // #fff, #fff, #fff, #fff, #fff;
     }
 }
 
+/**
+*   Footnotes style
+*/
+:root {
+    --footnotes-font-size: 1.3rem;
+    --footnotes-color: gray;
+}
+
 /*
 *   Shadow style
 *   Thanks to https://www.figma.com/community/plugin/744987207861965946/Shadow-picker
