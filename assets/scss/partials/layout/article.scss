@@ -46,6 +46,19 @@
                 font-size: var(--footnotes-font-size);
                 color: var(--footnotes-color);
             }
+            
+            /* 脚注 
+                - https://michelf.ca/projects/php-markdown/extra/#footnotes
+            */
+            .footnote-ref {
+                color: var(--link-color);
+            }
+            .footnote-ref:before {
+                content: ' [';
+            }
+            .footnote-ref:after {
+                content: ']';
+            }
 
             img {
                 max-width: 100%;
