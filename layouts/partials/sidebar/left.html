@@ -6,7 +6,7 @@
     </button>
 
     <header>
-        <!-- アバター画像 -->
+        <!-- アバター画像 
         {{ with .Site.Params.sidebar.avatar }}
             {{ if (default true .enabled) }}
             <figure class="site-avatar">
@@ -31,7 +31,8 @@
             </figure>
             {{ end }}
         {{ end }}
-        
+        -->
+
         <div class="site-meta">
             <h1 class="site-name"><a href="{{ .Site.BaseURL | relLangURL }}">{{ .Site.Title }}</a></h1>
             <h2 class="site-description">{{ .Site.Params.sidebar.subtitle }}</h2>
